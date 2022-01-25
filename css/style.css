@@ -154,18 +154,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin-right: 40px;
 }
 
-.gallery-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-}
-
-.gallery-cell:before {
-  display: block;
-  content: counter(gallery-cell);
-  line-height: 200px;
-}
-
 
 
 .blok2_topik {
