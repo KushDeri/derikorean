@@ -54,7 +54,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	overflow: hidden;
 }
 
-.menu .dropdown a {
+.menu a {
 	text-decoration: none;
 	position: relative;
 	transition: .4s ease-in-out;
@@ -66,7 +66,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 	float: left;
 	text-align: center;
-	padding: 22px 20px;
+	padding: 22px 10px 22px 60px;
 	text-decoration: none;
 }
 
