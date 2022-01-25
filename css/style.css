@@ -59,7 +59,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	position: relative;
 	transition: .4s ease-in-out;
 	cursor: pointer;
-	height: 22px;
+	/*height: 22px;*/
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	display: inline-block;
