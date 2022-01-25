@@ -116,7 +116,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin-top: 20px;
 }
 
-.tag li {
+.tag a {
 	list-style-type: none;
 	display: inline-block;
 	line-height: 40px;
@@ -153,6 +153,21 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border-radius: 15px;
 	margin-right: 40px;
 }
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+}
+
 
 
 .blok2_topik {
