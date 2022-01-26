@@ -165,36 +165,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 10px 30px;
 }
 
-.owl-carousel.owl-loaded {
-    display: block;
-}
-.book .slider-1 {
-    position: relative;
-}
-.owl-carousel {
-    display: none;
-    width: 100%;
-    /*z-index: 1;*/
-}
-.owl-carousel, .owl-carousel .owl-item {
-    -webkit-tap-highlight-color: transparent;
-    position: relative;
-}
-.owl-carousel .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0,0,0);
-}
-.owl-carousel .owl-drag .owl-item {
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
 
 
 .blok2_topik {
