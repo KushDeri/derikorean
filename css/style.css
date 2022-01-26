@@ -153,18 +153,16 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 	margin-top: 30px;
 	padding: 40px 40px 150px 40px;
+	text-align: center;
 }
 
 .blok1_books img {
 	list-style-type: none;
-	position: relative;
     display: inline-block;
-    
-	height: 165px;
-	-webkit-filter: drop-shadow(0px 0px 20px #C9908B);
-	        filter: drop-shadow(0px 0px 20px #C9908B);
-	border-radius: 15px;
-	margin-right: 40px;
+    height: 165px;
+    filter: drop-shadow(0px 0px 20px #C9908B);
+    border-radius: 15px;
+    margin: 10px 30px;
 }
 
 
