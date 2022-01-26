@@ -135,6 +135,10 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	font-size: 36pt;
 }
 
+.nazva img{
+	box-shadow: 0px 5px 20px #C9908B;
+}
+
 
 .blok1_books {
 	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
