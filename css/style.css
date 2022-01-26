@@ -157,7 +157,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 	margin-top: 30px;
 	padding: 40px 40px 150px 40px;
-	text-align: center;
 }
 
 .blok1_books img {
@@ -166,12 +165,14 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     height: 165px;
     filter: drop-shadow(0px 0px 20px #C9908B);
     border-radius: 15px;
-    margin: 10px 30px;
+    margin: 10px 0px;
 }
 .blok1_books a{
 	text-decoration: none;
+	text-align: center;
 	display: table-cell;
-	max-width: 200px;
+	max-width: 160px;
+	padding: 0 20px;
 }
 .blok1_books a:hover{
   -webkit-filter: drop-shadow(0 0 10px #7F4A45);
