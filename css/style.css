@@ -170,6 +170,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 }
 .blok1_books a{
 	text-decoration: none;
+	display: inline-block;
 }
 .blok1_books a:hover{
   -webkit-filter: drop-shadow(0 0 10px #C9908B);
