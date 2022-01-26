@@ -9,7 +9,11 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	font-size: 100%;
 	/*vertical-align: baseline;*/
 }
-
+@font-face {
+    font-family: Rosemary; /* Гарнитура шрифта */
+    src: url(fonts/DroidSans.ttf); /* Путь к файлу со шрифтом */
+   }
+   
 * {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
