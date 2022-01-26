@@ -171,7 +171,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .blok1_books a{
 	text-decoration: none;
 	display: table-cell;
-	max-width: 300px;
+	max-width: 130px;
 }
 .blok1_books a:hover{
   -webkit-filter: drop-shadow(0 0 10px #7F4A45);
