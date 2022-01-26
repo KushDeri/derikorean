@@ -18,7 +18,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 
 .blok {
-	/*font-family: Gochi Hand;*/
+	font-family: Rosemary;
 	background: url(images/bag.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -39,8 +39,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	font-size: 18px;
 	list-style: none;
 	width: 100%;
-	/*width: -webkit-fill-available;
-	width: fill-available;*/
 	display: flex;
 
 	justify-content: space-between;	
