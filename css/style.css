@@ -13,7 +13,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     font-family: Rosemary; /* Гарнитура шрифта */
     src: url(fonts/DroidSans.ttf); /* Путь к файлу со шрифтом */
    }
-   
+
 * {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
@@ -22,7 +22,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 
 .blok {
-	font-family: Rosemary;
+	font-family: Rosemary, 'Rosemary';
 	background: url(images/bag.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
