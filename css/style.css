@@ -136,7 +136,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 }
 
 .nazva img{
-	/*width: 25px;*/
+	width: 2em;
 	-webkit-filter: drop-shadow(0 0 15px #fbcbb4);
     filter: drop-shadow(0 0 15px #fbcbb4);
 }
