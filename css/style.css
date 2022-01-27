@@ -165,7 +165,8 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	list-style-type: none;
     display: inline-block;
     height: 165px;
-    filter: drop-shadow(0px 0px 20px #C9908B);
+    -webkit-filter: drop-shadow(0px 0px 20px #C9908B);
+            filter: drop-shadow(0px 0px 20px #C9908B);
     border-radius: 15px;
     margin: 10px 0px;
 }
@@ -217,6 +218,45 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
 	height: 150px;
+}
+
+.swiper-slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-slide a {
+	text-align: center;
+}
+
+.swiper-slide a img {
+	margin: 0 auto 10px;
+}
+
+.swiper-next, 
+.swiper-prev {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 999;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;	
+}
+
+.swiper-prev {
+	left: 0;
+}
+
+.swiper-next {
+	right: 0;
+}
+
+.swiper-next svg, .swiper-prev svg {
+	fill: white;
 }
 
 /*.avatar{
