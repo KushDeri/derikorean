@@ -115,6 +115,8 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	}
 }
 
+
+
 .tag {
 	margin-top: 20px;
 }
@@ -170,7 +172,8 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .blok1_books a{
 	text-decoration: none;
 	text-align: center;
-	display: table-cell;
+	display: inline-grid;
+	/*display: table-cell;*/
 	max-width: 160px;
 	padding: 0 20px;
 }

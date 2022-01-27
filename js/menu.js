@@ -1,4 +1,5 @@
 let menuOpener = document.querySelector(".icon");
+let menuClorer = document.querySelector(".icon");
 const menu = document.getElementById("menu");
 const blok = document.querySelector('.blok');
 let bgColor1 = {
@@ -63,7 +64,10 @@ window.addEventListener("scroll", function () {
         document.getElementById("menu").style.background = "rgba(" + color.r + "," + color.g + "," + color.b + ", 1)";
     } else {
         document.getElementById("menu").style.background = "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
-    }    
+    }
+
+
+
 });
 
 // Открывашка меню
@@ -71,4 +75,11 @@ menuOpener.addEventListener("click", (e) => {
     e.preventDefault();
     menu.classList.toggle("responsive");
     document.getElementById("menu").style.background = "linear-gradient(#C9908B, #7F4A45)";
+    //ыdocument.getElementById("menu").style.height = "100%";
 });
+//
+/*menuCloser.addEventListener("click", (e) => {
+    e.preventDefault();
+    menu.classList.toggle("responsive");
+    document.getElementById("menu").style.background = "rgba(255, 255, 255, 0)";
+});*/
