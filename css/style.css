@@ -220,6 +220,12 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	height: 150px;
 }
 
+.floor img{
+	width: 0.6em;
+}
+
+
+
 .swiper-slide {
 	display: flex;
 	align-items: center;
