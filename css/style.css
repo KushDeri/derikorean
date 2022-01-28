@@ -211,6 +211,15 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin-top: 30px;
 	padding: 40px 40px 150px 40px;
 }
+.blok_dop a {
+	display: block;
+	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
+	border-radius: 15px;
+	margin: 15px 40px 0 0;
+	padding: 20px;
+	max-width: 200px;
+	text-decoration: none;
+}
 
 .floor {
 	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
