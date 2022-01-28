@@ -16,6 +16,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 * {
 	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 	color: #fff;
 }
 
@@ -39,8 +40,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 
 .menu {
-	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
 	font-size: 18px;
 	list-style: none;
 	width: 100%;
@@ -137,7 +136,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .nazva {
 	margin-top: -110px;
 	padding-left: 50px;
-	font-weight: bold;
 	font-size: 36pt;
 }
 
@@ -149,6 +147,10 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .nazva a:hover{
   -webkit-filter: drop-shadow(0 0 10px #fdb493);
   filter: drop-shadow(0 0 10px #fdb493);
+}
+.nazva2 {
+	padding-left: 50px;
+	font-size: 30pt;
 }
 
 
