@@ -217,8 +217,10 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	border-radius: 15px;
 	margin: 15px 40px 0 0;
 	padding: 20px;
-	max-width: 1.5em;
 	text-decoration: none;
+}
+.blok_dop a img{
+	max-width: 1.5em;
 }
 
 .floor {
