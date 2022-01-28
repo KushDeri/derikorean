@@ -149,8 +149,8 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   filter: drop-shadow(0 0 10px #fdb493);
 }
 .nazva2 {
-	padding-left: 50px;
-	font-size: 30pt;
+	padding: 10px 0 20px;
+	font-size: 24pt;
 }
 
 
