@@ -196,11 +196,11 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 .blok2_topik a {
 	display: block;
-	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
+	background: rgba(255, 255, 255, 0.3);
 	border-radius: 15px;
 	margin: 15px 40px 0 0;
 	padding: 20px;
-	max-width: 200px;
+	max-width: 1.5em;
 	text-decoration: none;
 }
 .blok_dop{
