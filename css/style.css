@@ -183,7 +183,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .blok1_books a:hover{
   -webkit-filter: drop-shadow(0 0 10px #7F4A45);
   filter: drop-shadow(0 0 10px #7F4A45);
-  padding: 20px;
+  margin: 10px 0px;
 }
 
 
