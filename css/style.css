@@ -91,6 +91,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 
 .menu a:hover {
 	text-shadow: 0 0 10px #C9908B, 0 0 20px #C9908B;
+	padding: 22px 10px 22px 60px;
 }
 
 @media screen and (max-width: 600px) {
