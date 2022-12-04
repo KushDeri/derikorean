@@ -100,8 +100,8 @@ menuOpener.addEventListener("click", (e) => {
     
     
     calendar.insertAdjacentHTML("beforeend", `
-                    <div class="time time--past"><span class="hour">${new Date(year, month, firstDay).getMonth()}</span></div>
-                `);
+        <div class="time time--past"><span class="hour">${new Date(year, month, firstDay).getDate()}</span></div>
+    `);
 
     for (let i = 1; i < 8; i++) {
         if ((new Date(year, month, firstDay + i).getDate() < new Date(year, month, dt.getDate()).getDate())) {
@@ -147,7 +147,8 @@ menuOpener.addEventListener("click", (e) => {
         }
     }
 
-    for (let f = 0; f < 24; f++) {
+
+    for (let f = 0; f < 1; f++) {
         calendar.insertAdjacentHTML("beforeend", `
                     <div class="time time--past"><span class="hour">${f}:00</span></div>
                 `);

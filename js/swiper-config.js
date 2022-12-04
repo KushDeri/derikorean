@@ -2,26 +2,43 @@ let swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 15,
-    slidesPerView: 7,
+    slidesPerView: 6,
     dynamicBullets: true,
     breakpoints: {
         340: {
             slidesPerView: 1
         },
-        530: {
+        565: {
             slidesPerView: 3
         },
-        768: {
+        790: {
             slidesPerView: 4
         },
-        800: {
+        1015: {
             slidesPerView: 5
         },
-        992: {
-            slidesPerView: 6
-        },
         1240: {
-            slidesPerView: 7
+            slidesPerView: 6
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+    }
+});
+
+let swiper2 = new Swiper(".myTopik", {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 15,
+    slidesPerView: 2,
+    dynamicBullets: true,
+    breakpoints: {
+        340: {
+            slidesPerView: 1
+        },
+        620: {
+            slidesPerView: 2
         }
     },
     navigation: {
