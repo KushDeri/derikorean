@@ -241,7 +241,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	flex-flow: row wrap;
 	justify-content: center;
 }
-.cards scan {
+.cards span {
 	color: rgba(0, 0, 0, 0.7);
 	padding: 0 15px 0 10px;
 }
@@ -386,8 +386,9 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   	position: relative;
   	align-content: center;
 }
-.swiper-next, 
-.swiper-prev {
+.swiper-next_1, 
+.swiper-prev_1,.swiper-next_2, 
+.swiper-prev_2 {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -398,13 +399,14 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	    -ms-user-select: none;
 	        user-select: none;	
 }
-.swiper-prev {
+.swiper-prev_1, .swiper-prev_2{
 	left: 0;
 }
-.swiper-next {
+.swiper-next_1, .swiper-next_2{
 	right: 0;
 }
-.swiper-next svg, .swiper-prev svg {
+.swiper-next_1 svg, .swiper-prev_1 svg,
+.swiper-next_2 svg, .swiper-prev_2 svg {
 	fill: white;
 }
 /*END*/

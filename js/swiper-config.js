@@ -1,4 +1,7 @@
-let swiper = new Swiper(".mySwiper", {
+
+
+(function(){
+    let swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 15,
@@ -22,12 +25,12 @@ let swiper = new Swiper(".mySwiper", {
         }
     },
     navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
+        nextEl: ".swiper-next_1",
+        prevEl: ".swiper-prev_1",
     }
 });
 
-let swiper2 = new Swiper(".myTopik", {
+let swiper2 = new Swiper(".myTopik1", {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 15,
@@ -42,7 +45,30 @@ let swiper2 = new Swiper(".myTopik", {
         }
     },
     navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
+        nextEl: ".swiper-next_2",
+        prevEl: ".swiper-prev_2",
     }
 });
+
+let swiper3 = new Swiper(".myTopik2", {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 15,
+    slidesPerView: 2,
+    dynamicBullets: true,
+    breakpoints: {
+        340: {
+            slidesPerView: 1
+        },
+        620: {
+            slidesPerView: 2
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-next_3",
+        prevEl: ".swiper-prev_3",
+    }
+});
+
+})()
+
