@@ -141,8 +141,8 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	font-size: 36pt;
 	color: #000;
 }
-.nazva img{
-	width: 0.6em;
+.nazva svg{
+	width: 0.8em;
 	-webkit-filter: drop-shadow(0 0 15px #fbcbb4);
     filter: drop-shadow(0 0 15px #fbcbb4);
 }
@@ -171,10 +171,10 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin-top: 30px;
 	padding: 40px 90px 150px 90px;
 }
-/*.bg p {
+.bg p {
 	color: #fff;
-}*/
-.bg_w scan, p {
+}
+.bg_w span, p {
 	color: #000;
 }
 
@@ -197,12 +197,12 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	text-align: center;
 	display: inline-grid;
 	max-width: 160px;
-	padding: 0 20px;
+	padding: 15px 20px;
 }
 .blok1_books a:hover{
   -webkit-filter: drop-shadow(0 0 10px #7F4A45);
   filter: drop-shadow(0 0 10px #7F4A45);
-  margin: 10px 0px;
+  margin: -10px 0px;
 }
 
 
@@ -230,10 +230,9 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	font-size: 20px
 }*/
 .cards {
-	max-width: 1200px;
-	/*width: 100%;*/
+	/*max-width: 1200px;*/
+	width: 100%;
 	margin: auto;
-	padding: 35px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -246,7 +245,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	padding: 0 15px 0 10px;
 }
 .region{
-  width: 45%;
+  width: 40%;
   margin: 0 1% 16px 1%;
   padding-right: 5px;
   display: -webkit-box;
@@ -258,14 +257,19 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .ukrain {
   /*border-right: 2px solid #C9908B;*/
 }
-.region iconify-icon {
+.region svg {
 	-webkit-filter: drop-shadow(5px 5px 5px #C9908B);
             filter: drop-shadow(5px 5px 5px #C9908B);
   padding-bottom: 15px;
 }
+.myTopik {
+	width: 100%;
+}
+.myTopik .swiper-wrapper {
+	padding: 0 30px;
+}
 .card {
-	/*width: 77%;*/
-	max-width: 500px;
+	max-width: 600px;
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 8px;
   	border-right: 10px solid #C9908B;
@@ -317,17 +321,30 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   font-size: 14px;
   padding: 16px;
 }
+.city{
+	display: -webkit-box;
+	
+}
+.city ul {
+	list-style: none;
+}
+.city a {
+	text-decoration: none;
+}
 
-@media screen and (min-width: 200px) and (max-width: 650px) {
+@media screen and (min-width: 200px) and (max-width: 790px) {
   .region {
     width: 100%;
   }
   .cards {
     flex-direction: column;
   }
-  .card {
-    width: calc(50%-2%);   
+  .myTopik{
+
   }
+  /*.card {
+    width: calc(50%-2%);   
+  }*/
 }
 
 
@@ -405,10 +422,10 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .swiper-next_1, .swiper-next_2{
 	right: 0;
 }
-.swiper-next_1 svg, .swiper-prev_1 svg,
+/*.swiper-next_1 svg, .swiper-prev_1 svg,
 .swiper-next_2 svg, .swiper-prev_2 svg {
 	fill: white;
-}
+}*/
 /*END*/
 
 

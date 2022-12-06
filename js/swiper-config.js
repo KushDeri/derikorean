@@ -1,6 +1,6 @@
-
-
 (function(){
+
+})()
     let swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',
     loop: true,
@@ -30,18 +30,18 @@
     }
 });
 
-let swiper2 = new Swiper(".myTopik1", {
+let swiper2 = new Swiper(".myTopik", {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 15,
-    slidesPerView: 2,
+    slidesPerView: 1,
     dynamicBullets: true,
     breakpoints: {
         340: {
             slidesPerView: 1
         },
-        620: {
-            slidesPerView: 2
+        1240: {
+            slidesPerView: 1
         }
     },
     navigation: {
@@ -49,26 +49,3 @@ let swiper2 = new Swiper(".myTopik1", {
         prevEl: ".swiper-prev_2",
     }
 });
-
-let swiper3 = new Swiper(".myTopik2", {
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 15,
-    slidesPerView: 2,
-    dynamicBullets: true,
-    breakpoints: {
-        340: {
-            slidesPerView: 1
-        },
-        620: {
-            slidesPerView: 2
-        }
-    },
-    navigation: {
-        nextEl: ".swiper-next_3",
-        prevEl: ".swiper-prev_3",
-    }
-});
-
-})()
-
