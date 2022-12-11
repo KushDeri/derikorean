@@ -140,45 +140,6 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 }
 
 
-/*стрелочки слайдер*/
-.swiper-slide {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.swiper-slide a {
-	text-align: center;
-}
-.swiper-slide a img {
-	margin: 0 auto 10px;
-}
-.blok1_books .swiper-wrapper {
-	margin: 0px 30px;
-  	/* отступы для стрелок */
-  	position: relative;
-  	align-content: center;
-}
-.swiper-next_1, 
-.swiper-prev_1,.swiper-next_2, 
-.swiper-prev_2 {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 999;
-	cursor: pointer;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;	
-}
-.swiper-prev_1, .swiper-prev_2{
-	left: 0;
-}
-.swiper-next_1, .swiper-next_2{
-	right: 0;
-}
-
-
 /*.main_bkbg {
     position: absolute;
     width: 100%;

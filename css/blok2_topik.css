@@ -1,38 +1,29 @@
 .blok2_topik {
 	display: flex;	
 }
-.blok2_topik iconify-icon {
-	-webkit-filter: drop-shadow(5px 5px 5px #C9908B);
-            filter: drop-shadow(5px 5px 5px #C9908B);
-    display: block;
-}
 .cards {
-	/*max-width: 1200px;*/
-	width: 100%;
+	max-width: 100%;
 	margin: auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-flow: row wrap;
-	flex-flow: row wrap;
-	justify-content: center;
+  flex-wrap: wrap;
+	justify-content: space-around;
 }
 .cards span {
 	color: rgba(0, 0, 0, 0.7);
 	padding: 0 15px 0 10px;
 }
 .region{
-  width: 40%;
-  margin: 0 1% 50px 1%;
-  padding-right: 40px;
+  max-width: 45%;
+  overflow: hidden;
+  margin: 0 0px 50px 0;
+  /*padding-right: 40px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
   flex-flow: column;
-}
-.ukrain {
-  /*border-right: 2px solid #C9908B;*/
 }
 .region svg {
 	-webkit-filter: drop-shadow(5px 5px 5px #C9908B);
@@ -40,17 +31,17 @@
   padding-bottom: 15px;
 }
 .myTopik {
-	width: 100%;
+	max-width: 100%;
 }
 .myTopik .swiper-wrapper {
-	padding: 0 30px;
+	/*padding: 0 30px;*/
 }
 .card {
-	max-width: 600px;
+	max-width: 100%;
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 8px;
   border-right: 10px solid #C9908B;
-  margin: 0 15% 16px 4%;
+  margin: 0 5% 16px 5%;
   padding: 0 10px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,6 +98,7 @@
 }
 .city li {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-bottom: 10px; 
 }
@@ -116,10 +108,11 @@
   border-radius: 5px;
   max-width: 310px;
   max-height: 20px;
-  margin-left: -5px; 
+  margin-left: -5px;
+  margin-top: 5px; 
   padding: 5px 10px;
   display: inline-block;
-  /*overflow: hidden; */
+  overflow: hidden;
 }
 .lokation a {
   display: flex;
@@ -131,14 +124,14 @@
           filter: none;
 }
 
-@media screen and (min-width: 1055px) and (max-width: 1340px) {
+@media screen and (min-width: 1050px) and (max-width: 1235px) {
 	.card{
-		margin: 0 20% 16px 10%;
+		margin: 0 11% 16px 11%;
 	}
 }
-@media screen and (min-width: 650px) and (max-width: 1054px) {
+@media screen and (min-width: 650px) and (max-width: 1050px) {
   .region {
-    width: 100%;
+    max-width: 100%;
   }
   .cards {
     flex-direction: column;
@@ -152,16 +145,16 @@
 }
 @media screen and (min-width: 600px) and (max-width: 650px) {
 	.region {
-    width: 100%;
-  	}
-  	.cards {
+    max-width: 100%;
+  }
+  .cards {
     flex-direction: column;
 	}
 	.myTopik{
 		width: 100%;
 	}
 	.card{
-		margin: 0 20% 16px 10%;
+		margin: 0 11% 16px 11%;
 	}
 	.city ul{
 		width: 85%;
@@ -174,16 +167,16 @@
 		padding: 40px 40px 150px 40px;
 	}
 	.region {
-    width: 98%;
-  	}
-  	.cards {
+    max-width: 100%;
+  }
+  .cards {
     flex-direction: column;
 	}
 	.myTopik{
 		width: 100%;
 	}
 	.card{
-		margin: 0 25% 16px 7%;
+		margin: 0 11% 16px 11%;
 	}
 	.card-title {
 	  font-size: 14px;
@@ -192,6 +185,6 @@
 		font-size: 9.5px;
 	}
 	.city ul{
-		width: 55%;
+		max-width: 55%;
 	}
 }

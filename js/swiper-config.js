@@ -1,6 +1,7 @@
 (function(){
 
 })()
+
     let swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',
     loop: true,

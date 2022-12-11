@@ -1,7 +1,6 @@
 .blok1_books {
 
 }
-
 .blok1_books img {
 	list-style-type: none;
     display: inline-block;
@@ -22,4 +21,48 @@
   -webkit-filter: drop-shadow(0 0 10px #7F4A45);
   filter: drop-shadow(0 0 10px #7F4A45);
   margin: -10px 0px;
+}
+
+/*стрелочки слайдер*/
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide a {
+  /*max-width: */
+  max-height: 200px;
+  text-align: center;
+  overflow: hidden;
+}
+.swiper-slide a img {
+  margin: 0 auto 10px;
+}
+.blok1_books .swiper-wrapper {
+  margin: 0px 25px;
+  max-width: 100%;
+  /*overflow: hidden;*/
+  /* отступы для стрелок */
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+.swiper-next_1, 
+.swiper-prev_1,.swiper-next_2, 
+.swiper-prev_2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;  
+}
+.swiper-prev_1, .swiper-prev_2{
+  left: 0;
+}
+.swiper-next_1, .swiper-next_2{
+  right: 0;
 }
