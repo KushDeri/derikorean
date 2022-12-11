@@ -89,11 +89,13 @@
 }
 .city{
   padding-top: 10px;
-	display: -webkit-box;
+  margin-right: 5px;
+	display: flex;
+  align-items: baseline;
+  width: 100%;
 }
 .city ul {
 	list-style: none;
-	width: 90%;
   margin-top: -5px;
 }
 .city li {
@@ -102,28 +104,39 @@
   align-items: center;
   padding-bottom: 10px; 
 }
-
 .lokation {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  max-width: 310px;
-  max-height: 20px;
+  max-width: 300px;
+  max-height: 22px;
   margin-left: -5px;
-  margin-top: 5px; 
   padding: 5px 10px;
-  display: inline-block;
-  overflow: hidden;
+  -webkit-line-clamp: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /*обрезает текс по заданому размеру*/
+  text-transform: uppercase; /*все буквы заглавные*/
+  white-space: nowrap;
+  text-overflow: ellipsis; /*непомещающийся текст в рамки заменяет на ...*/
 }
 .lokation a {
-  display: flex;
   text-decoration: none;
+  line-height: 150%; /*меж строчное растояние*/
+  
 }
 .lokation svg {
-  padding-right: 5px; 
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 0px;
   -webkit-filter: none;
           filter: none;
 }
 
+/*@media all {
+  .lokation{
+    max-width: cals();
+  }
+}*/
 @media screen and (min-width: 1050px) and (max-width: 1235px) {
 	.card{
 		margin: 0 11% 16px 11%;
