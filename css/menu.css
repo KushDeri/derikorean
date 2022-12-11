@@ -3,8 +3,7 @@
 	list-style: none;
 	width: 100%;
 	display: flex;
-
-	justify-content: space-between;	
+	justify-content: flex-start;	
 	position: fixed;
 	height: auto;
 	top: 0;
@@ -26,7 +25,7 @@
 	display: inline-block;
 	float: left;
 	text-align: center;
-	padding: 22px 50px;
+	padding: 20px 30px;
 	text-decoration: none;
 }
 
@@ -52,10 +51,15 @@
 }
 
 /*telefon*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 850px) {
 	.menu {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		font-size: 26px;
+		padding: 30px;
+		justify-content: center;
+		align-items: center;
+	}
+	.menu a {
+		padding: 30px 30px;
 	}
 	.menu.responsive {
 		padding-top: 0;
@@ -64,9 +68,15 @@
 	.menu .icon {
 		display: block;
 	}
+	.menu .icon .close {
+		display: none;
+	}
 	.menu .dropdown {
 		display: none;
 		flex-direction: column;
+	}
+	.menu .dropdown svg {
+		display: none;
 	}
 	.menu.responsive .dropdown {
 		display: flex;

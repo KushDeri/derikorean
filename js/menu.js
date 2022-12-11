@@ -16,17 +16,19 @@ let bgColor2 = {
 
 
 
+
 window.onload = function () {
     window.dispatchEvent(new Event("scroll"));
-    if (document.body.clientWidth > 600) {
+    if (document.body.clientWidth > 850) {
         menu.classList.remove("responsive");
     }
 };
 window.addEventListener('resize', () => {
-    if (document.body.clientWidth > 600) {
+    if (document.body.clientWidth > 850) {
         menu.classList.remove("responsive");
     }
 });
+
 window.addEventListener("scroll", function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop; //текущая позиция скролла
     let scrollHeight = Math.max(
@@ -34,7 +36,6 @@ window.addEventListener("scroll", function () {
         document.body.offsetHeight, document.documentElement.offsetHeight,
         document.body.clientHeight, document.documentElement.clientHeight
     ) - innerHeight; //Получаем высоту видимой части окна
-
     let percent = scrollTop / scrollHeight;
     let color = {
         r: 201,
@@ -64,21 +65,24 @@ window.addEventListener("scroll", function () {
     } else {
         document.getElementById("menu").style.background = "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
     }
-
-
-
 });
 
 // Открывашка меню
 menuOpener.addEventListener("click", (e) => {
     e.preventDefault();
-    menu.classList.toggle("responsive");
-    document.getElementById("menu").style.background = "linear-gradient(#C9908B, #7F4A45)";
-    //document.getElementById("menu").style.height = "100%";
+
+    if (menu.classList.contains('responsive')) {
+        menu.classList.toggle('responsive');
+        document.getElementById("open").style.display = "block";
+        document.getElementById("close").style.display = "none";
+        document.getElementById("menu").style.height = "5%";
+    } else {
+        menu.classList.toggle('responsive');
+        document.getElementById("close").style.display = "block";
+        document.getElementById("open").style.display = "none";
+        document.getElementById("menu").style.background = "linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%)";
+        document.getElementById("menu").style.height = "100%";
+    }
 });
-//
-// menuCloser.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     menu.classList.toggle("responsive");
-//     document.getElementById("menu").style.background = "rgba(255, 255, 255, 0)";
-// });
+
+(function () {}());

@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/blok2_topik.css">
   <link rel="stylesheet" type="text/css" href="css/blok4_day_word.css">
   <link rel="stylesheet" type="text/css" href="css/blok5_study_room.css">
+  <link rel="stylesheet" type="text/css" href="css/blok6_useful_sites.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
@@ -28,7 +29,10 @@
 <body>
   <!--menu-->
   <nav class="menu" id="menu">
-    <button class="icon" onclick="closeNav()"><svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg></button>
+    <button class="icon" onclick="closeNav()">
+      <svg class="open" id="open" xmlns="http://www.w3.org/2000/svg" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg>
+      <svg class="close" id="close" xmlns="http://www.w3.org/2000/svg" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m12 14.121l5.303 5.304a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879L6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.303a1.5 1.5 0 1 0 2.122 2.122L12 14.12Z"/></g></svg>
+    </button>
     <!--крестик-->
     <div class="dropdown">
       <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6 21q-.825 0-1.412-.587Q4 19.825 4 19v-9q0-.475.213-.9q.212-.425.587-.7l6-4.5q.275-.2.575-.3q.3-.1.625-.1t.625.1q.3.1.575.3l6 4.5q.375.275.588.7q.212.425.212.9v9q0 .825-.587 1.413Q18.825 21 18 21h-4v-7h-4v7Z"/></svg></a>
@@ -38,7 +42,7 @@
       <a href="#4">Day word</a>
       <a href="#5">Study room</a>
       <a href="#6">Useful sites</a>
-      <!--<a href="#3">KGSP</a>-->
+      <!--<a href="#">KGSP</a>-->
     </div>
   </nav>
 
@@ -48,7 +52,7 @@
 
   <!--books-->
   <section id="1" class="book">
-    <div class="nazva">Books <a href="https://t.me/deri_korean" target="_blank" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg></a></div>
+    <div class="nazva">Books <a href="https://t.me/deri_korean" target="_blank" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg></a></div>
 
     <div class="blok1_books bg">
       <div class="nazva2">ALL <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"/></svg>
@@ -211,7 +215,7 @@
 
   <!--exems-->
   <section id="2">
-    <div class="nazva">TOPIK <a href="https://www.topik.go.kr/TWMAIN/TWMAIN0010.do" target="_blank" title="TOPIK"><img src="images/healthicons_t.svg"></a></div>
+    <div class="nazva">TOPIK <a href="https://www.topik.go.kr/TWMAIN/TWMAIN0010.do" target="_blank" title="TOPIK"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9 7v2h2v8h2V9h2V7H9Z"/></svg></a></div>
     <div class="blok2_topik bg_w">
 
       <div class="cards">
@@ -221,9 +225,10 @@
           <!--carusel-->
           <div class="swiper myTopik">
             <div class="swiper-wrapper">
+
               <div class="swiper-slide">
                 <div class="card">
-                  <div class="card-title">Test 84</div>
+                  <div class="card-title">제87회 ?</div>
                   <div class="card-prices">
                     <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
                     <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
@@ -232,10 +237,55 @@
               </div>
               <div class="swiper-slide">
                 <div class="card">
-                  <div class="card-title">Test 81</div>
+                  <div class="card-title">제86회 ?</div>
                   <div class="card-prices">
                     <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
                     <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제85회 ?</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제84회</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제83회</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.05.24 - 2022.05.30<br>2022.07.10<br>2022.08.18</p></div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제82회</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.03.08 - 2022.03.14<br>2022.05.15<br>2022.06.30</p></div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제81회</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.02.08 - 2022.02.14<br>2022.04.10<br>2022.05.19</p></div>  
                   </div>
                 </div>
               </div>
@@ -250,9 +300,12 @@
             <p>Место проведения:</p>
             <ul>
               <li>
-                <a href="#">
-                  <span>Сеул</span>
-                </a>
+                <span>Seoul</span>
+                <div class="lokation">
+                  <a href="#" target="_blank" title="SOUTH UKRAINIAN NATIONAL PEDAGOGIKAL UNIVERSITY NAMED AFTER K. D. USHYNSKY" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M128.1 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.2 83.4 134.6a8.3 8.3 0 0 0 9.2 0c3.4-2.4 83.4-59.3 83.4-134.6a88.1 88.1 0 0 0-88-88Zm0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32Z"/></svg>SOUTH UKRAINIAN NATIONAL PEDA...<!-- вулиця Старопортофранківська 26, 65000-->
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -264,9 +317,19 @@
           <!--carusel-->
           <div class="swiper myTopik">
             <div class="swiper-wrapper">
+
               <div class="swiper-slide">
                 <div class="card">
-                  <div class="card-title">Test 84</div>
+                  <div class="card-title">제87회</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.08.02 - 2022.08.08 ?<br>2022.04.08<br>2022.11.24 ?</p></div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제84회 ?</div>
                   <div class="card-prices">
                     <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
                     <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
@@ -275,7 +338,53 @@
               </div>
               <div class="swiper-slide">
                 <div class="card">
-                  <div class="card-title">Test 81</div>
+                  <div class="card-title">제81회</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.01.17 - 2022.01.28<br>2022.04.09<br>2022.05.19</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-prev_2"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="rotate(180 12 12)"><path fill="currentColor" d="M9.31 6.71a.996.996 0 0 0 0 1.41L13.19 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.72 6.7c-.38-.38-1.02-.38-1.41.01z"/></g></svg></div>
+            <div class="swiper-next_2"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9.31 6.71a.996.996 0 0 0 0 1.41L13.19 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.72 6.7c-.38-.38-1.02-.38-1.41.01z"/></svg></div>
+          </div>
+          <!--end carusel-->
+
+          <div class="city">
+            <p>Место проведения:</p>
+            <ul>
+              <li>
+                <span>Krakow</span>
+                <div class="lokation">
+                  <a href="https://orient.uj.edu.pl/" target="_blank" title="INSTYTUT BLISKIEGO I DALEKIEGO WSCHODU UNIWERSYTETU JAGIELLOńSKIEGO" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M128.1 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.2 83.4 134.6a8.3 8.3 0 0 0 9.2 0c3.4-2.4 83.4-59.3 83.4-134.6a88.1 88.1 0 0 0-88-88Zm0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32Z"/></svg>INSTYTUT BLISKIEGO I DALEKIEGO ...<!-- WSCHODU UNIWERSYTETU JAGIELLOńSKIEGO, ul. Oleandry 2a, 30-063-->
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        
+        <div class="region ukrain">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#005BBB" d="M32 5H4a4 4 0 0 0-4 4v9h36V9a4 4 0 0 0-4-4z"/><path fill="#FFD500" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-9h36v9z"/></svg>
+          <!--carusel-->
+          <div class="swiper myTopik">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제81회</div>
+                  <div class="card-prices">
+                    <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
+                    <div class="price-org"><p>2022.01.17 - 2022.01.28<br>2022.04.09<br>2022.05.19</p></div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="card-title">제78회 ?</div>
                   <div class="card-prices">
                     <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
                     <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
@@ -293,51 +402,34 @@
             <p>Место проведения:</p>
             <ul>
               <li>
-                <a href="https://orient.uj.edu.pl/" target="_blank">
-                  <span>Kracow (Instytut Bliskiego i Dalekiego Wschodu Uniwersytetu Jagiellońskiego, ul. Oleandry 2a, 30-063)</span>
-                </a>
+                <span>Kyjv</span>
+                <div class="lokation">
+                  <a href="http://www.uakoreaedu.org/ua/index" target="_blank" title="KOREA EDUKATION CENTR IN UKRAINE" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M128.1 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.2 83.4 134.6a8.3 8.3 0 0 0 9.2 0c3.4-2.4 83.4-59.3 83.4-134.6a88.1 88.1 0 0 0-88-88Zm0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32Z"/></svg>KOREA EDUKATION CENTR IN UKRAINE ...<!-- вулиця Хрещатик 8, 02000-->
+                  </a>
+                </div>
               </li>
-            </ul>
+              <li>
+                <span>Dnipro</span>
+                <div class="lokation">
+                  <a href="http://umsf.dp.ua/" target="_blank" title="KING SEJONG INSTITUTE FOUNDATION IN DNIPRO" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M128.1 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.2 83.4 134.6a8.3 8.3 0 0 0 9.2 0c3.4-2.4 83.4-59.3 83.4-134.6a88.1 88.1 0 0 0-88-88Zm0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32Z"/></svg>KING SEJONG INSTITUTE FOUNDATI...<!--IN DNIPRO, вулиця Володимира Вернадського 2/4, 49000-->
+                  </a>
+                </div>
+              </li>
+              <li>
+                <span>Odessa</span>
+                <div class="lokation">
+                  <a href="https://pdpu.edu.ua/" target="_blank" title="SOUTH UKRAINIAN NATIONAL PEDAGOGIKAL UNIVERSITY NAMED AFTER K. D. USHYNSKY" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256"><path fill="currentColor" d="M128.1 16a88.1 88.1 0 0 0-88 88c0 75.3 80 132.2 83.4 134.6a8.3 8.3 0 0 0 9.2 0c3.4-2.4 83.4-59.3 83.4-134.6a88.1 88.1 0 0 0-88-88Zm0 56a32 32 0 1 1-32 32a32 32 0 0 1 32-32Z"/></svg>SOUTH UKRAINIAN NATIONAL PEDA...<!-- вулиця Старопортофранківська 26, 65000-->
+                  </a>
+                </div>
+              </li>
+            </ul>            
           </div>
-          
-        </div>
-        
-        <div class="region ukrain">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="#005BBB" d="M32 5H4a4 4 0 0 0-4 4v9h36V9a4 4 0 0 0-4-4z"/><path fill="#FFD500" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-9h36v9z"/></svg>
-          <div class="card">
-            <div class="card-title">Test 84</div>
-            <div class="card-prices">
-              <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
-              <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
-             </div>
-          </div>
-          <div class="card">
-            <div class="card-title">Test 84</div>
-            <div class="card-prices">
-              <div class="price-left"><p>Подача документов<br>Экзамен<br>Результаты</p></div>
-              <div class="price-org"><p>2022.08.02 - 2022.08.08<br>2022.10.16<br>2022.11.24</p></div>  
-             </div>
-          </div>
-
           <div class="city">
-            <p>Место проведения:</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <span>Киев</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>Одесса</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>Днепр</span>
-                </a>
-              </li>
-            </ul>
+            <p>Комісія за реєстрацію:</p>
+            <span>TOPIK  I: 500 грн, TOPIK II: 600 грн</span>
           </div>
 
         </div>
@@ -358,13 +450,13 @@
       uguk    yhv   iujguki vtiugui8iugkvolly uuiy w lr jlghrigdf gi gg ig   ng   rig regh igaj righ erufuej   vjdvik
        juer gkr gkgrkghrkghekg rui rhrgirog bre ih grigdk
         lgkhgkagrguwuahk kg kig bkjfwek iw ow weklwe    o i i io rgiaj feofofm  kf v c kvefa nve fgnef fewwnldv glg kl</p>-->
-        <a style="background: rgba(255, 255, 255, 0.4); padding: 8px; border-radius: 5px;" href="https://hangul.ru/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462a4.986 4.986 0 0 0 3.536-1.462l2.828-2.829l-1.414-1.414l-2.828 2.829a3.007 3.007 0 0 1-4.243 0a3.005 3.005 0 0 1 0-4.243l2.829-2.828l-1.414-1.414l-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071a5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414l2.828-2.829a3.007 3.007 0 0 1 4.243 0a3.005 3.005 0 0 1 0 4.243l-2.829 2.828l1.414 1.414l2.829-2.828z"/><path fill="currentColor" d="m8.464 16.95l-1.415-1.414l8.487-8.486l1.414 1.415z"/></svg> HANGUL.RU</a>
+        <a style="background: rgba(255, 255, 255, 0.4); padding: 8px; border-radius: 5px;" href="https://hangul.ru/"><svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462a4.986 4.986 0 0 0 3.536-1.462l2.828-2.829l-1.414-1.414l-2.828 2.829a3.007 3.007 0 0 1-4.243 0a3.005 3.005 0 0 1 0-4.243l2.829-2.828l-1.414-1.414l-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071a5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414l2.828-2.829a3.007 3.007 0 0 1 4.243 0a3.005 3.005 0 0 1 0 4.243l-2.829 2.828l1.414 1.414l2.829-2.828z"/><path fill="currentColor" d="m8.464 16.95l-1.415-1.414l8.487-8.486l1.414 1.415z"/></svg> HANGUL.RU</a>
     </div>
   </section>
 
   <!--words-->
   <section id="4">
-    <div class="nazva">DAY WORD <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M25.394 2.546A21.147 21.147 0 0 0 7.98 9.864a21.35 21.35 0 0 0 7.005 33.24a21.11 21.11 0 0 0 18.872-.406a.588.588 0 0 1 .3-.064a.582.582 0 0 1 .291.097a16.376 16.376 0 0 0 9.312 2.768a.593.593 0 0 0 .593-.595V37.67a.598.598 0 0 0-.137-.389a.586.586 0 0 0-.355-.206a8.395 8.395 0 0 1-1.982-.571a.59.59 0 0 1-.327-.375a.617.617 0 0 1-.018-.255a.603.603 0 0 1 .09-.24a21.366 21.366 0 0 0-5.857-29.56A21.124 21.124 0 0 0 25.37 2.533ZM11.177 23.819a12.909 12.909 0 0 1 7.92-11.937a12.797 12.797 0 0 1 14 2.792a12.944 12.944 0 0 1-1.949 19.865a12.804 12.804 0 0 1-16.213-1.604a12.942 12.942 0 0 1-3.767-9.118Z"/></svg></div>
+    <div class="nazva">DAY WORD <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M25.394 2.546A21.147 21.147 0 0 0 7.98 9.864a21.35 21.35 0 0 0 7.005 33.24a21.11 21.11 0 0 0 18.872-.406a.588.588 0 0 1 .3-.064a.582.582 0 0 1 .291.097a16.376 16.376 0 0 0 9.312 2.768a.593.593 0 0 0 .593-.595V37.67a.598.598 0 0 0-.137-.389a.586.586 0 0 0-.355-.206a8.395 8.395 0 0 1-1.982-.571a.59.59 0 0 1-.327-.375a.617.617 0 0 1-.018-.255a.603.603 0 0 1 .09-.24a21.366 21.366 0 0 0-5.857-29.56A21.124 21.124 0 0 0 25.37 2.533ZM11.177 23.819a12.909 12.909 0 0 1 7.92-11.937a12.797 12.797 0 0 1 14 2.792a12.944 12.944 0 0 1-1.949 19.865a12.804 12.804 0 0 1-16.213-1.604a12.942 12.942 0 0 1-3.767-9.118Z"/></svg></a></div>
     <div class="blok4_day_word bg_w">
       <h1>단어</h1>
       <h2>слово</h2>
@@ -373,7 +465,7 @@
 
   <!--study room-->
   <section id="5">
-    <div class="nazva_b">STUDY ROOM</div>
+    <div class="nazva_b">STUDY ROOM <svg xmlns="http://www.w3.org/2000/svg" width="0.8em" height="0.8em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#000" d="M2 21q-.425 0-.712-.288Q1 20.425 1 20t.288-.712Q1.575 19 2 19h20q.425 0 .712.288q.288.287.288.712t-.288.712Q22.425 21 22 21Zm2-3q-.825 0-1.412-.587Q2 16.825 2 16V5q0-.825.588-1.413Q3.175 3 4 3h16q.825 0 1.413.587Q22 4.175 22 5v11q0 .825-.587 1.413Q20.825 18 20 18Zm0-2h16V5H4v11Zm0 0V5v11Z"/></svg></div>
     <div class="blok5_study_room bg">
       <div class="calendar-header">
         <h1>
@@ -400,18 +492,26 @@
   <!--полезные сайты-->
   <section id="6">
     <div class="nazva">Useful sites</div>
-    <div class="blok6_ bg_w">
-      <a style="background: rgba(255, 255, 255, 0.4); padding: 8px; border-radius: 5px;" href="https://hangul.ru/"><iconify-icon icon="bx:link-alt"></iconify-icon> HANGUL.RU</a>
+    <div class="blok6_useful_sites bg_w">
+      <div class="sites">
+        <div class="site">
+          <img src="images/quizlet.png">
+          <div class="title">Quizlet</div>
+          <div class="o"></div>
+        </div>
+      </div>
       <!--<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7vPMugKcYwnX9Dh7SrLFHF?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
     </div>
   </section>
 
   <!--подвал-->
+  <div class="floor_frond"></div>
   <div class="floor">
     <a href="https://t.me/+44BU7mUTk8Q4YTky" target="_blank" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001l-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15l4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg></a>
     <a href="https://www.instagram.com/deri.dream/" target="_blank" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M7.465 1.066C8.638 1.012 9.012 1 12 1c2.988 0 3.362.013 4.534.066c1.172.053 1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12c0 2.988-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.396 5.396 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066c-2.988 0-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.397 5.397 0 0 1-1.949-1.268a5.392 5.392 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12c0-2.988.013-3.362.066-4.534c.053-1.172.24-1.972.511-2.672a5.396 5.396 0 0 1 1.27-1.948a5.392 5.392 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511Zm8.98 1.98c-1.16-.053-1.508-.064-4.445-.064c-2.937 0-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.412 3.412 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445c0 2.937.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064c2.938 0 3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445c0-2.937-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.413 3.413 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379Zm-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986ZM8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996Zm10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89Z" clip-rule="evenodd"/></svg></a>
     <a href="mailto:literalitera60@gmail.com" target="_blank" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path fill="currentColor" d="M32.33 6a2 2 0 0 0-.41 0h-28a2 2 0 0 0-.53.08l14.45 14.39Z" class="clr-i-solid clr-i-solid-path-1"/><path fill="currentColor" d="m33.81 7.39l-14.56 14.5a2 2 0 0 1-2.82 0L2 7.5a2 2 0 0 0-.07.5v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-.12-.61ZM5.3 28H3.91v-1.43l7.27-7.21l1.41 1.41Zm26.61 0h-1.4l-7.29-7.23l1.41-1.41l7.27 7.21Z" class="clr-i-solid clr-i-solid-path-2"/><path fill="none" d="M0 0h36v36H0z"/></svg></a>
   </div>
+
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

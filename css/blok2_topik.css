@@ -23,7 +23,7 @@
 }
 .region{
   width: 40%;
-  margin: 0 1% 16px 1%;
+  margin: 0 1% 50px 1%;
   padding-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,17 +49,18 @@
 	max-width: 600px;
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 8px;
-  	border-right: 10px solid #C9908B;
-  	margin: 0 15% 16px 4%;
-  	padding: 0 10px 0 0;
-  	display: -webkit-box;
-  	display: -ms-flexbox;
-  	display: flex;
-  	-ms-flex-flow: column;
-  	flex-flow: column;
+  border-right: 10px solid #C9908B;
+  margin: 0 15% 16px 4%;
+  padding: 0 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+  flex-flow: column;
 	box-shadow: 3px 3px 10px #C9908B;
 }
 .card-title {
+  font-family: 'Noto Sans KR', sans-serif;
   padding: 18px;
   font-size: 18px;
   color: #000;
@@ -96,16 +97,40 @@
   padding: 16px;
 }
 .city{
+  padding-top: 10px;
 	display: -webkit-box;
-	
 }
 .city ul {
 	list-style: none;
 	width: 90%;
+  margin-top: -5px;
 }
-.city a {
-	text-decoration: none;
+.city li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px; 
 }
+
+.lokation {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  max-width: 310px;
+  max-height: 20px;
+  margin-left: -5px; 
+  padding: 5px 10px;
+  display: inline-block;
+  /*overflow: hidden; */
+}
+.lokation a {
+  display: flex;
+  text-decoration: none;
+}
+.lokation svg {
+  padding-right: 5px; 
+  -webkit-filter: none;
+          filter: none;
+}
+
 @media screen and (min-width: 1055px) and (max-width: 1340px) {
 	.card{
 		margin: 0 20% 16px 10%;
