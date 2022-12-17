@@ -22,12 +22,14 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	background-size: 100% 180%;
 	background-position: center;
 
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
 	font-weight: bold;
 	font-family: 'Gochi Hand', cursive;
 	font-size: 80px;
 	text-align: center;
-	/*letter-spacing: -0.045em;*/
 	padding: 250px 60px 330px;
 	margin-top: -50px;
 }
@@ -63,7 +65,7 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 }
 .nazva_b{
 	margin-top: -110px;
-	padding-left: 70px;
+	padding-left: 60px;
 	font-size: 36pt;
 	color: #000;
 	display: flex;
@@ -123,20 +125,100 @@ hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 .floor {
 	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
 	box-shadow: 0px 5px 20px #C9908B;
-	padding: 40px;
+	padding: 60px 40px 30px 40px;
+	margin-top: -114px;
 	left: 0px;
-	margin-top: -104px;
 	z-index: 2;
 	clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.floor a {
+	padding-right: 10px;
 }
 .floor_frond{
 	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
 	box-shadow: 0px 5px 20px #C9908B;
-	/*padding: 40px;*/
-	margin-top: -104px;
-	height: 104px;
+	margin-top: -74px;
+	height: 114px;
 	left: 0px;
 	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+/*tablet 768px*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+	.bg_w, .bg {
+		padding: 40px 40px 150px 40px;
+	}
+	.blok {
+		padding: 250px 40px 330px;
+	}
+	.nazva, .nazva_b {
+		padding-left: 40px;
+	}
+}
+/*mobil L 425px*/
+@media screen and (min-width: 376px) and (max-width: 426px) {
+	.bg_w, .bg {
+		padding: 40px 40px 150px 40px;
+	}
+	.blok {
+		font-size: 76px;
+		padding: 190px 40px 270px;
+	}
+	.blok h2 {
+		font-size: 60px;
+	}
+	.nazva, .nazva_b {
+		font-size: 32pt;
+		padding-left: 40px;
+	}
+}
+
+/*mobil M 375px*/
+@media screen and (min-width: 321px) and (max-width: 376px) {
+	.bg_w, .bg {
+		padding: 40px 35px 150px 35px;
+		margin-top: 10px;
+		border-radius: 40px 40px 0px 0px;
+	}
+	.blok {
+		font-size: 72px;
+		padding: 190px 35px 270px;
+	}
+	.blok h2 {
+		font-size: 54px;
+	}
+	.nazva, .nazva_b {
+		font-size: 30pt;
+		margin-top: -90px;
+		padding-left: 40px;
+	}
+	.floor a {
+		padding-right: 5px;
+	}
+}
+
+/*mobil S 320px*/
+@media screen and (max-width: 321px) {
+	.bg_w, .bg {
+		padding: 40px 30px 110px 30px;
+		margin-top: 10px;
+		border-radius: 25px 25px 0px 0px;
+	}
+	.nazva, .nazva_b {
+		font-size: 28pt;
+		padding-left: 30px;
+		margin-top: -70px;
+	}
+	.blok {
+		font-size: 68px;
+		padding: 190px 35px 270px;
+	}
+	.blok h2 {
+		font-size: 50px;
+	}
+	.floor a {
+		padding-right: 5px;
+	}
 }
 
 

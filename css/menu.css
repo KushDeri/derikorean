@@ -45,6 +45,10 @@
 	padding: 0;
 	margin: 0;
 }
+.menu .icon svg {
+	width: 25px;
+	height: 25px;
+}
 
 .menu a:hover {
 	text-shadow: 0 0 10px #C9908B, 0 0 20px #C9908B;
@@ -53,13 +57,13 @@
 /*telefon*/
 @media screen and (max-width: 850px) {
 	.menu {
-		font-size: 26px;
+		font-size: 24px;
 		padding: 30px;
 		justify-content: center;
 		align-items: center;
 	}
 	.menu a {
-		padding: 30px 30px;
+		padding: 20px 30px;
 	}
 	.menu.responsive {
 		padding-top: 0;
@@ -80,5 +84,12 @@
 	}
 	.menu.responsive .dropdown {
 		display: flex;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.menu .icon svg {
+	width: 20px;
+	height: 20px;
 	}
 }

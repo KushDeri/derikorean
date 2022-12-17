@@ -2,26 +2,32 @@
 
 })()
 
-    let swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 15,
+    spaceBetween: 5,
     slidesPerView: 6,
     dynamicBullets: true,
     breakpoints: {
+        270: {
+            slidesPerView: 1
+        },
         340: {
             slidesPerView: 1
         },
-        565: {
+        560: {
+            slidesPerView: 2
+        },
+        720: {
             slidesPerView: 3
         },
-        790: {
+        910: {
             slidesPerView: 4
         },
-        1015: {
+        1060: {
             slidesPerView: 5
         },
-        1240: {
+        1290: {
             slidesPerView: 6
         }
     },

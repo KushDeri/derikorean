@@ -15,7 +15,7 @@
 	text-align: center;
 	display: inline-grid;
 	max-width: 160px;
-	padding: 15px 20px;
+	padding: 15px 10px;
 }
 .blok1_books a:hover{
   -webkit-filter: drop-shadow(0 0 10px #7F4A45);
@@ -23,29 +23,37 @@
   margin: -10px 0px;
 }
 
+.mySwiper {
+  max-width: 100%;
+}
+
+.blok1_books .swiper-wrapper {
+  position: relative;
+  display: flex;
+}
+.blok1_books .swiper-slide-active {
+  /*margin-left: 11px;*/
+}
+
 /*стрелочки слайдер*/
+.blok1_books .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 250px;
+  overflow: hidden;
+}
+.blok1_books .swiper-slide a {
+  text-align: center;
+}
+.blok1_books .swiper-slide a img {
+  margin: 0 auto 10px;
+}
+
 .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.swiper-slide a {
-  /*max-width: */
-  max-height: 200px;
-  text-align: center;
-  overflow: hidden;
-}
-.swiper-slide a img {
-  margin: 0 auto 10px;
-}
-.blok1_books .swiper-wrapper {
-  margin: 0px 25px;
-  max-width: 100%;
-  /*overflow: hidden;*/
-  /* отступы для стрелок */
-  position: relative;
-  display: flex;
-  align-content: center;
 }
 .swiper-next_1, 
 .swiper-prev_1,.swiper-next_2, 
@@ -60,9 +68,9 @@
       -ms-user-select: none;
           user-select: none;  
 }
-.swiper-prev_1, .swiper-prev_2{
-  left: 0;
+.swiper-prev_1{
+  left: -16px;
 }
-.swiper-next_1, .swiper-next_2{
-  right: 0;
+.swiper-next_1{
+  right: -16px;
 }

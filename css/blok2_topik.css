@@ -1,19 +1,48 @@
 .blok2_topik {
-	display: flex;	
+	display: block;	
 }
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.info span, .t, .i, .s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+.info p {
+  margin-right: 10px;
+}
+
+.t {
+  background: #ECA9BC;
+}
+
+.i {
+  background: #A9B0EC;
+}
+
+.s {
+  background: #ECC1A9;
+}
+
 .cards {
 	max-width: 100%;
 	margin: auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
+  margin-top: 10px;
 	display: flex;
   flex-wrap: wrap;
 	justify-content: space-around;
 }
-.cards span {
-	color: rgba(0, 0, 0, 0.7);
-	padding: 0 15px 0 10px;
-}
+
 .region{
   max-width: 45%;
   overflow: hidden;
@@ -30,12 +59,11 @@
             filter: drop-shadow(5px 5px 5px #C9908B);
   padding-bottom: 15px;
 }
+
 .myTopik {
 	max-width: 100%;
 }
-.myTopik .swiper-wrapper {
-	/*padding: 0 30px;*/
-}
+
 .card {
 	max-width: 100%;
 	background: rgba(255, 255, 255, 0.3);
@@ -55,6 +83,7 @@
   padding: 18px;
   font-size: 18px;
   color: #000;
+  display: flex;
 }
 .card-prices {
   color: #000;
@@ -102,8 +131,23 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
+  padding-left: 5px;
 }
+.city a {
+  text-decoration: none;
+}
+.city span {
+  color: rgba(0, 0, 0, 0.7);
+  padding-right: 15px;
+  padding-left: 2px;
+}
+.city svg {
+  padding-bottom: 0px;
+  -webkit-filter: none;
+          filter: none;
+}
+
 .lokation {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -114,15 +158,13 @@
   -webkit-line-clamp: 1;
   display: flex;
   align-items: center;
-  overflow: hidden; /*обрезает текс по заданому размеру*/
   text-transform: uppercase; /*все буквы заглавные*/
   white-space: nowrap;
-  text-overflow: ellipsis; /*непомещающийся текст в рамки заменяет на ...*/
 }
 .lokation a {
-  text-decoration: none;
   line-height: 150%; /*меж строчное растояние*/
-  
+  text-overflow: ellipsis; /*непомещающийся текст в рамки заменяет на ...*/
+  overflow: hidden; /*обрезает текс по заданому размеру*/
 }
 .lokation svg {
   padding-right: 5px;
@@ -132,15 +174,30 @@
           filter: none;
 }
 
+.swiper-prev_2{
+  left: 0;
+}
+.swiper-next_2{
+  right: 0;
+}
+
 /*@media all {
   .lokation{
     max-width: cals();
   }
 }*/
+@media screen and (min-width: 1235px) and (max-width: 1415px) {
+  .lokation{
+    max-width: 220px;
+  }
+}
 @media screen and (min-width: 1050px) and (max-width: 1235px) {
 	.card{
 		margin: 0 11% 16px 11%;
 	}
+  .lokation{
+    max-width: 135px;
+  }
 }
 @media screen and (min-width: 650px) and (max-width: 1050px) {
   .region {
@@ -152,9 +209,11 @@
   .myTopik{
   	width: 100%;
   }
-  .city ul{
-		width: 75%;
-	}
+}
+@media screen and (min-width: 650px) and (max-width: 740px) {
+  .lokation{
+    max-width: 215px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 650px) {
 	.region {
@@ -169,16 +228,13 @@
 	.card{
 		margin: 0 11% 16px 11%;
 	}
-	.city ul{
-		width: 85%;
-	}
+  .lokation{
+    max-width: 160px;
+  }
 }
 
 /*mobile*/
-@media screen and (max-width: 600px) {
-	.bg_w{
-		padding: 40px 40px 150px 40px;
-	}
+@media screen and (min-width: 426px) and (max-width: 600px) {
 	.region {
     max-width: 100%;
   }
@@ -197,7 +253,148 @@
 	.card-prices {
 		font-size: 9.5px;
 	}
-	.city ul{
-		max-width: 55%;
-	}
+  .lokation{
+    max-width: 140px;
+  }
+}
+/*mobil L 425px*/
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  .region {
+    max-width: 100%;
+  }
+  .info span, .info p {
+    font-size: 12px;
+  }
+  .info span {
+    width: 20px;
+    height: 20px;
+  }
+  .info p {
+    margin-right: 5px;
+  }
+  .t, .i, .s {
+    width: 20px;
+    height: 20px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .myTopik{
+    width: 100%;
+  }
+  .card{
+    margin: 0 11% 16px 11%;
+  }
+  .card-title {
+    font-size: 14px;
+    padding-bottom: 9px;
+  }
+  .card-prices {
+    font-size: 9.5px;
+  }
+  .lokation{
+    max-width: 120px;
+  }
+  .swiper-prev_2{
+  left: -5px;
+  }
+}
+
+/*mobil M 375px*/
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  .region {
+    max-width: 100%;
+  }
+  .flag {
+    width: 35px;
+  }
+  .info span, .info p {
+    font-size: 11px;
+  }
+  .info span {
+    width: 20px;
+    height: 20px;
+  }
+  .info p {
+    margin-right: 3px;
+  }
+  .t, .i, .s {
+    width: 20px;
+    height: 20px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .myTopik{
+    width: 100%;
+  }
+  .card{
+    margin: 0 11% 16px 11%;
+  }
+  .card-title {
+    font-size: 14px;
+    padding-bottom: 9px;
+  }
+  .card-prices {
+    font-size: 9.5px;
+  }
+  .lokation{
+    max-width: 120px;
+  }
+  .swiper-prev_2{
+  left: -7px;
+  }
+  .swiper-next_2{
+  right: -5px;
+  }
+}
+
+/*mobil S 320px*/
+@media screen and (max-width: 321px) {
+  .region {
+    max-width: 100%;
+  }
+  .flag {
+    width: 30px;
+  }
+  .info span, .info p {
+    font-size: 10px;
+  }
+  .info span {
+    width: 18px;
+    height: 18px;
+    margin: 0 3px;
+  }
+  .info p {
+    margin-right: 2px;
+  }
+  .t, .i, .s {
+    width: 18px;
+    height: 18px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .myTopik{
+    width: 100%;
+  }
+  .card{
+    margin: 0 11% 16px 11%;
+  }
+  .card-title {
+    font-size: 14px;
+    padding-bottom: 0px;
+  }
+  .card-prices {
+    font-size: 9.5px;
+  }
+  .lokation{
+    max-width: 100px;
+  }
+  .swiper-prev_2{
+  left: -13px;
+  }
+  .swiper-next_2{
+  right: -10px;
+  }
 }
