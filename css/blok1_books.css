@@ -38,9 +38,9 @@
 /*стрелочки слайдер*/
 .blok1_books .swiper-slide {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  max-height: 250px;
+  max-height: 230px;
   overflow: hidden;
 }
 .blok1_books .swiper-slide a {
