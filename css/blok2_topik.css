@@ -148,6 +148,10 @@
           filter: none;
 }
 
+.korean .city a {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .lokation {
   background: rgba(0, 0, 0, 0.25);
   border-radius: 5px;
