@@ -1,22 +1,7 @@
 .blok5_study_room {
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
-/*.blok5_study_room .sidebar {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  max-width: 58px;
-  width: 100%;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  overflow: hidden;
-  transition: max-width 0.2s ease-out;
-}
-.blok5_study_room .sidebar:hover {
-  max-width: 320px;
-  width: 100%;
-}*/
+
 .blok5_study_room .calendar {
   display: grid;
   width: 100%;
@@ -27,6 +12,7 @@
   overflow: auto;
 }
 .blok5_study_room .calendar-container {
+  margin-top: 20px;
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
@@ -149,7 +135,8 @@
   background: none;
   color: #7F4A45;
 }
-/*.blok5_study_room .day--disabled {
+
+.blok5_study_room .day--disabled {
   color: rgba(127, 74, 69, 0.2);
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f9f9fa' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
   -webkit-user-select: none;
@@ -157,7 +144,8 @@
       -ms-user-select: none;
           user-select: none;
   cursor: not-allowed;
-}*/
+}
+
 .blok5_study_room .day--current .date{
 	background-color: #fff;
 	color: #7F4A45;

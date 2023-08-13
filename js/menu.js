@@ -1,6 +1,7 @@
 let menuOpener = document.querySelector(".icon");
 const menu = document.getElementById("menu");
 const blok = document.querySelector('.blok');
+var links = document.querySelectorAll('.menu .nav .main > li > a');
 let bgColor1 = {
     r: 201,
     g: 144,
@@ -13,8 +14,6 @@ let bgColor2 = {
     b: 69,
     a: 1
 }; //В какой цвет
-
-
 
 
 window.onload = function () {
@@ -46,7 +45,8 @@ window.addEventListener("scroll", function () {
     let color_shadow = {
         r: 127,
         g: 74,
-        b: 69
+        b: 69,
+        a: 1
     };
     let tmp = Math.abs(bgColor1.r - bgColor2.r) * percent;
     color.r = Math.ceil(bgColor1.r > bgColor2.r ? bgColor1.r - tmp : bgColor1.r + tmp);
@@ -61,11 +61,47 @@ window.addEventListener("scroll", function () {
     color.a = Math.ceil(bgColor1.a > bgColor2.a ? bgColor1.a - tmp : bgColor1.a + tmp);
 
     if (menu.classList.contains('responsive')) {
-        document.getElementById("menu").style.background = "rgba(" + color.r + "," + color.g + "," + color.b + ", 1)";
+        menu.style.background = "rgba(" + color.r + "," + color.g + "," + color.b + ", 1)";
     } else {
-        document.getElementById("menu").style.background = "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
+        menu.style.background = "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
+
     }
+
+    if (menu.style.background = "rgba(" + color.r + "," + color.g + "," + color.b + ", 1)" && color.a == 0) {
+        links.forEach(function(link) {
+            link.style.color = "#111";
+          });
+    } else {
+        links.forEach(function(link) {
+            link.style.color = "#fff";
+          });
+        
+    }
+
+    //добавление класса on
+
+    //for (var i = 0; i < 5; i++) {
+    //    if (document.getElementById(i)) {
+    //        links.forEach(function(link) {
+    //            links.classList.add('on');
+                //break;
+    //        });
+    //    }
+    //}
+    
+    
+
+
+
 });
+
+
+
+
+
+
+
+
 
 // Открывашка меню
 menuOpener.addEventListener("click", (e) => {

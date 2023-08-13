@@ -1,5 +1,12 @@
 .blok2_topik {
-	display: block;	
+	display: block;
+  margin-top: -5px;
+}
+
+.hanok {
+  margin-top: -350px;
+  margin-right: 70px;
+  float: right;
 }
 
 .info {
@@ -66,9 +73,8 @@
 
 .card {
 	max-width: 100%;
-	background: rgba(255, 255, 255, 0.3);
-	border-radius: 8px;
-  border-right: 10px solid #C9908B;
+	/*background: rgba(255, 255, 255, 0.3);*/
+  /*border-right: 10px solid #C9908B;*/
   margin: 0 5% 16px 5%;
   padding: 0 10px 0 0;
   display: -webkit-box;
@@ -77,12 +83,18 @@
   -ms-flex-flow: column;
   flex-flow: column;
 	box-shadow: 3px 3px 10px #C9908B;
+  border-radius: 12px;
+  background: linear-gradient(121deg, #FFF 0%, #F3B1AC 100%);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+}
+.bg .card p {
+  color: #000;
 }
 .card-title {
+  color: #000;
   font-family: 'Noto Sans KR', sans-serif;
   padding: 18px;
   font-size: 18px;
-  color: #000;
   display: flex;
 }
 .card-prices {
@@ -138,7 +150,6 @@
   text-decoration: none;
 }
 .city span {
-  color: rgba(0, 0, 0, 0.7);
   padding-right: 15px;
   padding-left: 2px;
 }
@@ -185,7 +196,7 @@
   right: 0;
 }
 
-.blok2_topik .calendar {
+.blok2_topik .chom {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(7, minmax(70px, 1fr));
@@ -193,7 +204,7 @@
   grid-auto-rows: 100px;
   overflow: auto;
 }
-.blok2_topik .calendar-container {
+.blok2_topik .chom-container {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
