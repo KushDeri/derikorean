@@ -153,17 +153,16 @@ a {
 		padding: 40px 40px 150px 40px;
 	}
 	.blok {
-		font-size: 76px;
-		padding: 190px 0px 270px;
+		padding: 500px 0px 110px;
 	}
 	.blok h1 {
-		font-size: 26px;
-		margin-bottom: 0px;
+		font-size: 20px;
+		margin-bottom: -5px;
 		padding: 0 0 0 55px;
 	}
 	.blok h2 {
-		font-size: 74px;
-		padding: 0 0 0 52px;
+		font-size: 60px;
+		padding: 0 0 10px 52px;
 	}
 	.nazva, .nazva_b {
 		font-size: 32pt;
@@ -179,16 +178,16 @@ a {
 		border-radius: 40px 40px 0px 0px;
 	}
 	.blok {
-		font-size: 72px;
-		padding: 193px 0 149px;
+		font-size: 68px;
+		padding: 455px 0 105px;
 	}
 	.blok h1 {
-		font-size: 22px;
+		font-size: 18px;
 		margin-bottom: 0px;
 		padding: 0 0 0 51px;
 	}
 	.blok h2 {
-		font-size: 70px;
+		font-size: 58px;
 		padding: 0 0 0 48px;
 	}
 	.nazva, .nazva_b {
