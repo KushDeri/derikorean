@@ -153,16 +153,16 @@ a {
 		padding: 40px 40px 150px 40px;
 	}
 	.blok {
-		padding: 500px 0px 110px;
+		padding: 550px 0px 110px;
 	}
 	.blok h1 {
 		font-size: 20px;
 		margin-bottom: -5px;
-		padding: 0 0 0 55px;
+		padding: 0 0 0 48px;
 	}
 	.blok h2 {
 		font-size: 60px;
-		padding: 0 0 10px 52px;
+		padding: 0 0 0px 45px;
 	}
 	.nazva, .nazva_b {
 		font-size: 32pt;
