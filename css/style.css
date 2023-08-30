@@ -56,24 +56,6 @@ a {
 	padding: 0 0 0 135px;
 }
 
-
-/*.tag {
-	margin-top: 20px;
-}
-
-.tag a {
-	list-style-type: none;
-	display: inline-block;
-	line-height: 40px;
-	padding: 0 50px;
-	margin-right: 50px;
-
-	background: linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%);
-	box-shadow: 0px 5px 20px #C9908B;
-	border-radius: 30px;
-}*/
-
-
 .nazva {
 	font-family: 'Aclonica', sans-serif;
 	font-size: 36pt;
@@ -152,6 +134,7 @@ a {
 	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
+
 /*tablet 768px*/
 @media screen and (min-width: 426px) and (max-width: 768px) {
 	.bg_w, .bg {
@@ -191,10 +174,16 @@ a {
 	}
 	.blok {
 		font-size: 72px;
-		padding: 190px 35px 270px;
+		padding: 193px 0 149px;
+	}
+	.blok h1 {
+		font-size: 22px;
+		margin-bottom: 0px;
+		padding: 0 0 0 51px;
 	}
 	.blok h2 {
-		font-size: 54px;
+		font-size: 70px;
+		padding: 0 0 0 48px;
 	}
 	.nazva, .nazva_b {
 		font-size: 30pt;
@@ -203,6 +192,9 @@ a {
 	}
 	.floor a {
 		padding-right: 5px;
+	}
+	.bg_w {
+	    padding: 60px 25px 150px;
 	}
 }
 
@@ -229,57 +221,3 @@ a {
 		padding-right: 5px;
 	}
 }
-
-
-/*.main_bkbg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 9;
-    box-sizing: border-box;
-}
-.main_bgimg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.video, .release {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    padding-bottom: 50px;
-    margin-top: 50px;
-}
-.image-set .video {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transition: 0.3s;
-    z-index: 233;
-    padding-bottom: 0;
-}
-.image-set .video img {
-    width: 100%;
-}
-.textWrap .play {
-    position: relative;
-    width: 75px;
-    height: 75px;
-    transition: 0.3s;
-}*/
