@@ -111,12 +111,6 @@ window.addEventListener("scroll", function () {
 }
 
 
-
-});
-
-
-
-
 (function () {}());
 
 // Открывашка меню
@@ -128,11 +122,21 @@ menuOpener.addEventListener("click", (e) => {
         document.querySelector(".close").style.display = "none";
         document.querySelector(".open").style.display = "block";
         //document.getElementById("menu").style.height = "5%";
+        menu.style.background = "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
     } else {
         menu.classList.toggle('responsive');
         document.querySelector(".ver_m").style.display = "block";
         document.querySelector(".open").style.display = "none";
         document.querySelector(".close").style.display = "block";
         document.getElementById('close').style.color = "#fff";
+        menu.style.background = "rgba(" + color.r + "," + color.g + "," + color.b + ", 1)";
     }
 });
+
+
+
+});
+
+
+
+
