@@ -121,15 +121,22 @@ menuOpener.addEventListener("click", (e) => {
         document.querySelector(".ver_m").style.display = "none";
         document.querySelector(".close").style.display = "none";
         document.querySelector(".open").style.display = "block";
-        //document.getElementById("menu").style.height = "5%";
+        document.getElementById('menu').style.height = "5%";
         menu.style.background = "rgba(" + color.r + "," + color.g + "," + color.b + "," + color.a + ")";
+        //links.forEach(function(link) {
+        //    link.style.color = "#fff";
+        //  });
     } else {
         menu.classList.toggle('responsive');
         document.querySelector(".ver_m").style.display = "block";
         document.querySelector(".open").style.display = "none";
         document.querySelector(".close").style.display = "block";
         document.getElementById('close').style.color = "#fff";
+        document.getElementById('menu').style.height = "100%";
         menu.style.background = "rgba(" + color.r + "," + color.g + "," + color.b + ", 1)";
+        links.forEach(function(link) {
+            link.style.color = "#fff";
+          });
     }
 });
 
