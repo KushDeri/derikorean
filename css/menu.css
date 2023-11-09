@@ -26,8 +26,8 @@
 .logo {
 	position: absolute;
     z-index: 10;
-    padding: 25px 30px 20px 0;
     color: #111;
+    padding: 25px 30px 20px 0;
 }
 
 .menu .nav {
@@ -80,9 +80,6 @@
 .ver_m {
 	display: block;
 }
-.ver_b {
-    display: none;
-}
 
 .menu .nav .main li a {
     position: relative;
@@ -116,6 +113,43 @@
 }
 
 
+.burger-icon {
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.burger-icon .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+/*.menu.responsive .burger-icon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu.responsive .burger-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.responsive .burger-icon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}*/
+
+
+
+
 /*telefon*/
 @media screen and (max-width: 850px) {
 	.menu {
@@ -147,12 +181,21 @@
 	.menu.responsive .dropdown {
 		display: flex;
 	}
-	.ver_b {
+	/*.ver_b {
 		display: block;
-	}
+	}*/
 	.ver_m {
 	    display: none;
 	}
+	.logo {
+		position: relative;
+	}
+	.menu .nav .main {
+    left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 @media screen and (max-width: 426px) {

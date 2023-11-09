@@ -15,7 +15,6 @@ let bgColor2 = {
     a: 1
 }; //В какой цвет
 
-
 window.onload = function () {
     window.dispatchEvent(new Event("scroll"));
     if (document.body.clientWidth > 850) {
@@ -27,6 +26,7 @@ window.addEventListener('resize', () => {
         menu.classList.remove("responsive");
     }
 });
+
 
 window.addEventListener("scroll", function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop; //текущая позиция скролла
@@ -89,7 +89,26 @@ window.addEventListener("scroll", function () {
     //    }
     //}
     
-    
+    // Открывашка меню
+    function toggleMenu() {
+//    const menu = document.getElementById("menu");
+    menu.classList.toggle('responsive');
+
+    if (menu.classList.contains('responsive')) {
+        // Закрити меню
+        // Змінити іконку на бургер
+//        document.getElementById("close").style.display = "block";
+//        document.getElementById("open").style.display = "none";
+//        document.getElementById("menu").style.background = "linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%)";
+//        document.getElementById("menu").style.height = "100%";
+    } else {
+        // Відкрити меню
+        // Змінити іконку на хрестик
+//        document.getElementById("open").style.display = "block";
+//        document.getElementById("close").style.display = "none";
+//        document.getElementById("menu").style.height = "5%";
+    }
+}
 
 
 
@@ -98,27 +117,22 @@ window.addEventListener("scroll", function () {
 
 
 
-
-
-
-
+(function () {}());
 
 // Открывашка меню
 menuOpener.addEventListener("click", (e) => {
     e.preventDefault();
-
-    if (menu.classList.contains('responsive')) {
+     if (menu.classList.contains('responsive')) {
         menu.classList.toggle('responsive');
-        document.getElementById("open").style.display = "block";
-        document.getElementById("close").style.display = "none";
-        document.getElementById("menu").style.height = "5%";
+        document.querySelector(".ver_m").style.display = "none";
+        document.querySelector(".close").style.display = "none";
+        document.querySelector(".open").style.display = "block";
+        //document.getElementById("menu").style.height = "5%";
     } else {
         menu.classList.toggle('responsive');
-        document.getElementById("close").style.display = "block";
-        document.getElementById("open").style.display = "none";
-        document.getElementById("menu").style.background = "linear-gradient(171.42deg, #C9908B 1.7%, #7F4A45 99.16%)";
-        document.getElementById("menu").style.height = "100%";
+        document.querySelector(".ver_m").style.display = "block";
+        document.querySelector(".open").style.display = "none";
+        document.querySelector(".close").style.display = "block";
+        document.getElementById('close').style.color = "#fff";
     }
 });
-
-(function () {}());

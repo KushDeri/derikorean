@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <!--<link rel="stylesheet" type="text/css" href="css/home_image.css">-->
   <link rel="stylesheet" type="text/css" href="css/blok1_books.css">
   <link rel="stylesheet" type="text/css" href="css/blok2_topik.css">
   <link rel="stylesheet" type="text/css" href="css/blok4_day_word.css">
@@ -34,10 +35,10 @@
 <body>
   <!--menu-->
   <header class="menu" id="menu">
-    <h1 class="logo">
-      <a class="goMain" href="index.html">!home</a>
-    </h1>
     <nav class="nav ver_m">
+      <h1 class="logo">
+        <a class="goMain" href="index.html">!home</a>
+      </h1>
       <ul class="main">
         <li>
           <a href="#1">Books</a>
@@ -57,57 +58,20 @@
         <li>
           <a href="#6">Useful sites</a>
         </li>
-        <!--<a href="#">KGSP</a>-->
       </ul>
     </nav>
-    <nav class="nav ver_b">
-      <div class="nav_bg" style="display: none;"></div>
-      <ul class="burger">
-        <li>
-          <a href="#1">Books</a>
-        </li>
-        <li>
-          <a href="#2">TOPIK</a>
-        </li>
-        <li>
-          <a href="#3">Hangul</a>
-        </li>
-        <li>
-          <a href="#4">Day word</a>
-        </li>
-        <li>
-          <a href="#5">Study room</a>
-        </li>
-        <li>
-          <a href="#6">Useful sites</a>
-        </li>
-        <!--<a href="#">KGSP</a>-->
-      </ul>
-    </nav>
-    <!--крестик-->
-    <button class="icon" onclick="closeNav()">
-      <svg class="open" id="open" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg>
+
+    <!-- Кнопка бургер-меню -->
+    <!--<button class="burger-icon" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>-->
+    <button class="icon" onclick="toggleMenu()">
+      <svg class="open" id="open" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="#111" fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg>
       <svg class="close" id="close" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m12 14.121l5.303 5.304a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879L6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.303a1.5 1.5 0 1 0 2.122 2.122L12 14.12Z"/></g></svg>
     </button>
   </header>
-
-
-  <!--<nav>-->
-      <!--крестик-->
-      <!--<button class="icon" onclick="closeNav()">
-        <svg class="open" id="open" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></svg>
-        <svg class="close" id="close" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m12 14.121l5.303 5.304a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879L6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.303a1.5 1.5 0 1 0 2.122 2.122L12 14.12Z"/></g></svg>
-      </button>
-      <div class="dropdown">
-        <a class="dropdown_2" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M6 21q-.825 0-1.412-.587Q4 19.825 4 19v-9q0-.475.213-.9q.212-.425.587-.7l6-4.5q.275-.2.575-.3q.3-.1.625-.1t.625.1q.3.1.575.3l6 4.5q.375.275.588.7q.212.425.212.9v9q0 .825-.587 1.413Q18.825 21 18 21h-4v-7h-4v7Z"/></svg></a>
-        <a class="dropdown_2" href="#1">Books</a>
-        <a class="dropdown_2" href="#2">TOPIK</a>
-        <a class="dropdown_2" href="#3">Hangul</a>
-        <a class="dropdown_2" href="#4">Day word</a>
-        <a class="dropdown_2" href="#5">Study room</a>
-        <a class="dropdown_2" href="#6">Useful sites</a>
-      </div>-->
-  <!--</nav>-->
     
 
   <div class="blok">
@@ -1372,7 +1336,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="https://drive.google.com/file/d/10amTtnUNlDPo6aK74neIYIFmGvo24h-9/view?usp=sharing"
-              title="Korean grammar in Use" target="_blank"><img src="images/korean_grammar_1.jpg">Korean grammar in
+              title="Korean grammar in Use" target="_blank"><img alt="#"  src="images/korean_grammar_1.jpg">Korean grammar in
               Use</a>
           </div>
           <div class="swiper-slide">
@@ -1426,7 +1390,7 @@
             <a href="https://drive.google.com/file/d/1gIPqICEee31KHovkHT3LvH4VSvjWIbN8/view?usp=sharing" title="TOPIK I слова" target="_blank"><img src="images/topik1_vocabulary.jpg">합격의 신 단어장 TOPIK I слова</a>
           </div>
           <div class="swiper-slide topik_book">
-            <a href="https://drive.google.com/file/d/1gJ-wlDVDNw0jKSToVAYpLt05wvyez_CW/view?usp=sharing" title="TOPIK I упражнения" target="_blank"><img src="images/topik1_reading.jpg">합격의 신 연습문제 упражнения (чтение)</a>
+            <a href="https://drive.google.com/file/d/1gJ-wlDVDNw0jKSToVAYpLt05wvyez_CW/view?usp=sharing" title="TOPIK I упражнения" target="_blank"><img alt="#" src="images/topik1_reading.jpg">합격의 신 연습문제 упражнения (чтение)</a>
           </div>
           <div class="swiper-slide topik_book">
             <a href="https://drive.google.com/file/d/13z7q7JxbUirFo1UEo-14T9M837p8UEDM/view?usp=sharing" title="TOPIK I грамматика" target="_blank"><img src="images/topik1_reading.jpg">합격의 신 부록 грамматика</a>
@@ -1988,7 +1952,7 @@
 
   <!--study room-->
   <section id="5">
-    
+    <div>COMIND SOON</div>>
     <div class="blok5_study_room bg_w">
       <div class="nazva_b">STUDY ROOM 
         <a href="#">
@@ -2045,6 +2009,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script src="js/menu.js"></script>
+  <!--<script src="js/home_image.js"></script>-->
   <script src="js/back.js"></script>
   <script src="js/swiper-config.js"></script>
   <!--<script src="js/books.js"></script>-->
